@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+img:focus{
+    outline: none;
+}
+
+.header{
+    padding: 2%;
+    text-align: center;
+    
+    
+}
+
+#brandname{
+    text-align: center;
+    margin-top: 2%;
+    color:#0275d8;
+    text-decoration: underline;
+    
+}
+
+img{
+      float: left;
+
+  }
+
+#homebutton{
+    background-color: transparent;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 21%;
+    
+}
+
+#homebutton a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navrow{
+    text-align: center;
+    margin-bottom: -1%
+}
+
+.tenantdropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    border: none;
+}
+  
+  #tenantdropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 22%;
+  }
+  
+  .tenantdropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -66%;
+  }
+
+  
+  
+  .tenantdropdowncontent a {
+    color: #0275d8;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12.5px;
+  }
+  
+  .tenantdropdowncontent a:hover {
+      background-color: #ddd;
+    }
+  
+  #tenantdropdown:hover .tenantdropdowncontent {
+      display: block;
+    }
+  
+  .tenantdropdown:hover .tenantdropbtn {
+      background-color: #3e8e41;
+    }
+
+    .rentaldropbtn {
+        background-color: transparent;
+        color: black;
+        font-size: 16px;
+        border: none;
+        
+    }
+      
+      #rentaldropdown {
+        position: relative;
+        display: inline-block;
+        margin-right: 20%;
+      }
+      
+      .rentaldropdowncontent {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: -66%;
+      }
+      
+      .rentaldropdowncontent a {
+        color: #0275d8;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        font-size: 12.5px;
+      }
+      
+      .rentaldropdowncontent a:hover {
+          background-color: #ddd;
+        }
+      
+      #rentaldropdown:hover .rentaldropdowncontent {
+          display: block;
+        }
+      
+      .rentaldropdown:hover .rentaldropbtn {
+          background-color: #3e8e41;
+        }
+
+    #contactbutton{
+        display: inline-block;
+    }
+
+    #contactbutton a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+
+    #login{
+       margin-top: 2%;
+      display: block;
+      margin-right: -25%;
+      margin-left: 10%;
+    }
+
+    #login a{
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+

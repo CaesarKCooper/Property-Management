@@ -1,0 +1,286 @@
+<!-- <section class="ftco-section">
+    <div class="container-fluid" >
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center mb-5">
+                
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-7">
+<div class="col-md-12">
+    <div class="contact-wrap w-100 p-md-5 p-4">
+        <h2>Add Property Form </h2>
+        <div id="form-message-warning" class="mb-4"></div> 
+  <div id="form-message-success" class="mb-4">
+Your message was sent, thank you!
+  </div>
+        <form (ngSubmit)="submitProperty()" accept-charset="UTF-8" id="contactForm" name="contactForm" class="contactForm">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="label" for="name">Property Title</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.propertyTitle" name="propertyTitle" id="name" placeholder="Title">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="form-group">
+                        <label class="label" for="name">Property Address</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.propertyAddress" name="propertyAddress" id="email" placeholder="Address">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-4"> 
+                    <div class="form-group">
+                        <label class="label" for="name">Property Type</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.propertyType" name="propertyType" id="email" placeholder="Type">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label id="subjectbox" class="label" for="subject">Bedrooms</label>
+                        <input type="number" class="form-control" required [(ngModel)]="studioefficiency.bedrooms" name="bedrooms" id="subject" placeholder="Bedrooms">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label id="subjectbox" class="label" for="subject">Bathrooms</label>
+                        <input type="number" class="form-control" required [(ngModel)]="studioefficiency.bathrooms" name="bathrooms" id="subject" placeholder="Bathrooms">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label id="subjectbox" class="label" for="subject">Price</label>
+                            <input type="number" class="form-control" required [(ngModel)]="studioefficiency.price" name="price" id="subject" placeholder="Price">
+                            <span class="focus-input3"></span>
+                        </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 1</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description1" name="description1" id="name" placeholder="Description 1">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 2</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description2" name="description2" id="name" placeholder="Description 2">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 3</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description3" name="description3" id="name" placeholder="Description 3">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 4</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description4" name="description4" id="name" placeholder="Description 4">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 5</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description5" name="description5" id="name" placeholder="Description 5">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 6</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description6" name="description6" id="name" placeholder="Description 6">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label class="label" for="name">Description 7</label>
+                        <input type="text" class="form-control" required [(ngModel)]="studioefficiency.description7" name="description7" id="name" placeholder="Description 7">
+                        <span class="focus-input3"></span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    
+                        <input id="submitbutton" value="Submit" class="btn btn-light">
+                        <div></div>
+                    
+                </div>
+                <div class="col-md-4">
+                    
+                    <input id="submitbutton" value="Submit" class="btn btn-light">
+                    <div></div>
+                
+            </div>
+            <div class="col-md-4">
+                    
+                <input id="submitbutton" value="Submit" class="btn btn-light">
+                <div></div>
+            
+        </div>
+                <div class="btn btn-light" (click)="logout()">Logout</div>
+            </div>
+        </form>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+<div class="subheader">
+    <div>
+        <h1 class="subheadertext">Add Apartment</h1>
+    </div>
+</div>
+
+
+
+
+<div id="submitcontainer" class="container">
+    <div class="col-md-6">
+    
+        <button id="submitbutton" class="btn btn-light" routerLink="/addstudioefficiency">Studio/Efficiency</button>
+        <div></div>
+    
+</div>
+<div class="col-md-6">
+        
+    <button id="submitbutton" class="btn btn-light" routerLink="/addhome">Home</button>
+        <div></div>
+
+</div>
+</div>
+
+<div class="container">
+
+<form (ngSubmit)="submitProperty()">
+
+    
+
+    <div class="col-md-4">
+        <div class="form-group">
+            <label class="label" for="propertyTitle">Property Title</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.propertyTitle" name="propertyTitle" id="name" placeholder="Title">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-4"> 
+        <div class="form-group">
+            <label class="label" for="propertyAddress">Property Address</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.propertyAddress" name="propertyAddress" id="email" placeholder="Address">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-4"> 
+        <div class="form-group">
+            <label class="label" for="propertyType">Property Type</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.propertyType" name="propertyType" id="email" placeholder="Type">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label id="subjectbox" class="label" for="bedrooms">Bedrooms</label>
+            <input type="number" class="form-control" required [(ngModel)]="apartment.bedrooms" name="bedrooms" id="subject" placeholder="Bedrooms">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            <label id="subjectbox" class="label" for="bathrooms">Bathrooms</label>
+            <input type="number" class="form-control" required [(ngModel)]="apartment.bathrooms" name="bathrooms" id="subject" placeholder="Bathrooms">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label id="subjectbox" class="label" for="price">Price</label>
+                <input type="number" class="form-control" required [(ngModel)]="apartment.price" name="price" id="subject" placeholder="Price">
+                <span class="focus-input3"></span>
+            </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description1">Description 1</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description1" name="description1" id="name" placeholder="Description 1">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description2">Description 2</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description2" name="description2" id="name" placeholder="Description 2">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description3">Description 3</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description3" name="description3" id="name" placeholder="Description 3">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description4">Description 4</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description4" name="description4" id="name" placeholder="Description 4">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description5">Description 5</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description5" name="description5" id="name" placeholder="Description 5">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description6">Description 6</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description6" name="description6" id="name" placeholder="Description 6">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="label" for="description7">Description 7</label>
+            <input type="text" class="form-control" required [(ngModel)]="apartment.description7" name="description7" id="name" placeholder="Description 7">
+            <span class="focus-input3"></span>
+        </div>
+    </div>
+
+    <div id="bottom" class="container">
+<div class="col-md-6">
+    
+<input id="submitbutton" type="submit" value="Submit" class="btn btn-light">
+<div></div>
+
+</div>
+
+
+
+<div class="col-md-6">
+<div id="logout" class="btn btn-light" (click)="logout()">Logout</div>
+</div>
+</div>
+
+
+
+
+</form>
+
+
+</div>
