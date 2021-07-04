@@ -1,0 +1,141 @@
+
+<div class="no-map-scroll"> <div class="click-map" onClick="style.pointerEvents='none'"></div>
+<!-- <div style="width: 100%"><iframe  width="1440" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q={{studioefficiency.stNumber}}%20{{studioefficiency.direction}}%20{{studioefficiency.stName}}%20{{studioefficiency.stType}}%20,%20{{studioefficiency.city}},%20{{studioefficiency.state}}%2019127+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/"></a></div> -->
+<!-- <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=4609%20Mansion%20Street%20,%20Philadelphia,%20PA%2019127+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/">Easy radius map</a></div> -->
+<!-- <div style="width: 100%"><iframe  width="1440" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=720&amp;height=600&amp;hl=en&amp;q={{studioefficiency.stNumber}}%20{{studioefficiency.stDirection}}%20{{studioefficiency.stName}}%20{{studioefficiency.stType}}%20{{studioefficiency.city}}%20{{studioefficiency.state}}+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.maps.ie/draw-radius-circle-map/"></a></div> -->
+
+</div>
+
+
+<div class="container-fluid">
+<div class="row">
+<div id="inquirybox" class="col-md-6">
+
+<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+<div class="container-contact3">
+    <div class="wrap-contact3">
+        <form (ngSubmit)="storeInquiry()" class="contact3-form validate-form">
+            <span class="contact3-form-title">
+                Inquiry
+            </span>
+
+
+
+            <div class="wrap-input3 validate-input" data-validate="Name is required">
+                <input class="input3" type="text" name="name" placeholder="First Name" required [(ngModel)]="inquiry.firstName">
+                <span class="focus-input3"></span>
+            </div>
+
+            <div class="wrap-input3 validate-input" data-validate="Name is required">
+                <input class="input3" type="text" name="name" placeholder="Last Name" required [(ngModel)]="inquiry.lastName">
+                <span class="focus-input3"></span>
+            </div>
+
+            <div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <input class="input3" type="text" name="email" placeholder="Your Email" required [(ngModel)]="inquiry.email">
+                <span class="focus-input3"></span>
+            </div>
+
+
+            <div class="wrap-input3 validate-input" data-validate = "Message is required">
+                <textarea class="input3" name="message" placeholder="Your Message" required [(ngModel)]="inquiry.message"></textarea>
+                <span class="focus-input3"></span>
+            </div>
+
+
+            <div class="container-contact3-form-btn">
+                <button class="contact3-form-btn" type="submit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Gallery -->
+
+<div id="pics" class="col-md-6">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <a href="{{home.picture1}}"><img src="{{home.picture1}}.jpg" class="img-responsive"></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <a href="{{home.picture2}}"><img src="{{home.picture2}}.jpg" class="img-responsive"></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <a href="{{home.picture3}}"><img src="{{home.picture3}}.jpg" class="img-responsive"></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+      <a href="{{home.picture4}}"><img src="{{home.picture4}}.jpg" class="img-responsive"></a>
+    </div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture5}}"><img src="{{home.picture5}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture6}}"><img src="{{home.picture6}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture7}}"><img src="{{home.picture7}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture8}}"><img src="{{home.picture8}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture9}}"><img src="{{home.picture9}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture10}}"><img src="{{home.picture10}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture11}}"><img src="{{home.picture11}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+  <a href="{{home.picture12}}"><img src="{{home.picture12}}.jpg" class="img-responsive"></a>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="description">
+<h2>{{home.propertyTitle}}</h2>
+
+        <h3>{{home.propertyAddress}}</h3>
+
+        <h3><strong>{{home.propertyType}}</strong></h3>
+
+        <li>{{home.description1}}</li>
+
+        <li>{{home.description2}}</li>
+                
+        <li>{{home.description3}}</li> 
+                
+        <li>{{home.description4}}</li> 
+                
+        <li>{{home.description5}}</li> 
+                
+        <li>{{home.description6}}</li> 
+                
+        <li>{{home.description7}}</li> 
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+
+<!-- Gallery -->
+
+
+    
+
+
+
+
+
+

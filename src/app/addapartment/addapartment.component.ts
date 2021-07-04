@@ -14,24 +14,24 @@ export class AddapartmentComponent implements OnInit {
 
 apartment = new Apartment();
 
-  constructor(private data: ManagementService, private router:Router, private authguard: AuthGuard) { }
+constructor(private data: ManagementService, private router:Router, private authguard: AuthGuard) { }
 
-  submitProperty(){
-    this.data.addApartment(this.apartment).subscribe(
-      response => {
-        this.router.navigate([`homepage`])
-      }
-    )
-  }
-  
-    ngOnInit(): void {
+submitProperty(){
+  this.data.addApartment(this.apartment).subscribe(
+    response => {
+      this.router.navigate([`homepage`])
     }
-  
-  logout(){
-    this.authguard.logout();
+  )
+}
+
+  ngOnInit(): void {
   }
-  
-  }
+
+logout(){
+  this.authguard.logout();
+}
+
+}
   
 
 

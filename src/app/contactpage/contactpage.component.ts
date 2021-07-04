@@ -12,4 +12,8 @@ export class ContactpageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+s(){
+  console.log("hurann")
+}
+
 }

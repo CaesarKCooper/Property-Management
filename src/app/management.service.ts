@@ -4,6 +4,8 @@ import { Observable } from 'rxjs';
 import { Studioefficiency } from './studioefficiency'
 import { Home } from './home';
 import { Apartment } from './apartment';
+import { ImageModel } from './imagemodel';
+import { Inquiry } from './inquiry';
 
 
 @Injectable({
@@ -60,6 +62,18 @@ export class ManagementService {
     let token = localStorage.getItem('access_token')
     return this.http.post<Home>(`http://localhost:8080/api/homes`, home);
     {headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)}
+
+  }
+
+  addInquiry(inquiry: Inquiry):Observable<Inquiry>{
+    let token = localStorage.getItem('access_token')
+    return this.http.post<Inquiry>(`http://localhost:8080/api/inquiry`, inquiry);
+    {headers: new HttpHeaders().set('Authorization', 'Bearer ' + token)}
+
+  }
+
+  fetchInquiry(): Observable<Inquiry[]>{
+    return this.http.get<Inquiry[]>(`http://localhost:8080/api/inquiry`)
 
   }
 

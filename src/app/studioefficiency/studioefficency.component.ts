@@ -15,7 +15,9 @@ export class StudioefficiencyComponent implements OnInit {
   constructor(private data:ManagementService, private router: Router) { }
 
   ngOnInit(): void {
+   
     this.getAllProperties();
+   
   }
 
 getAllProperties(){
@@ -27,8 +29,10 @@ getAllProperties(){
 }
 
 viewDetails(id: number){
-  this.router.navigate([`rentalapplication`, id])
+  this.router.navigate([`studioefficiencyapplication`, id])
 
 }
+
+
 
 }
