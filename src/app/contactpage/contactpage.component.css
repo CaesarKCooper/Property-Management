@@ -67,7 +67,7 @@
     margin-bottom: 0.5rem; }
 
     .iconrow{
-        margin-top: 2%;
+        margin-top: -1%;
         
     }
   
@@ -451,7 +451,7 @@
   .container {
     width: 100%;
     padding-right: 15px;
-    margin-top: -110px;
+    margin-top: -140px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto; }
@@ -8379,6 +8379,8 @@
         margin-top: 20px;
     }
 
-    .no-map-scroll { position:relative; }
+    .no-map-scroll { 
+      margin-top: -130px;
+     }
 
 .click-map { width:100%; min-height:300px; position:absolute; top:0; }

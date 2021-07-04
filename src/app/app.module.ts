@@ -31,6 +31,10 @@ import { AuthGuard } from './auth.guard';
 import { AddhomeComponent } from './addhome/addhome.component';
 import { AddapartmentComponent } from './addapartment/addapartment.component';
 import { AddstudioefficiencyComponent } from './addstudioefficiency/addstudioefficiency.component';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+import { StudioefficiencyapplicationComponent } from './studioefficiencyapplication/studioefficiencyapplication.component';
+import { ApartmentapplicationComponent } from './apartmentapplication/apartmentapplication.component';
+import { HomeapplicationComponent } from './homeapplication/homeapplication.component';
 
 
 
@@ -51,6 +55,10 @@ import { AddstudioefficiencyComponent } from './addstudioefficiency/addstudioeff
     AddhomeComponent,
     AddapartmentComponent,
     AddstudioefficiencyComponent,
+    FileuploadComponent,
+    StudioefficiencyapplicationComponent,
+    ApartmentapplicationComponent,
+    HomeapplicationComponent,
   ],
   imports: [
     BrowserModule,
@@ -75,6 +83,8 @@ import { AddstudioefficiencyComponent } from './addstudioefficiency/addstudioeff
     MatSelectModule,
     MatOptionModule,
     MatProgressSpinnerModule
+    
+    
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent]

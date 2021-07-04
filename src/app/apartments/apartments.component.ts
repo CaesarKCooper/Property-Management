@@ -27,7 +27,7 @@ getAllProperties(){
 }
 
 viewDetails(id: number){
-  this.router.navigate([`rentalapplication`, id])
+  this.router.navigate([`apartmentapplication`, id])
 
 }
 

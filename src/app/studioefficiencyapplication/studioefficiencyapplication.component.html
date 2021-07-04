@@ -1,0 +1,133 @@
+
+<div class="container-fluid">
+<div class="row">
+<div id="inquirybox" class="col-md-6">
+
+<div class="bg-contact3" style="background-image: url('images/bg-01.jpg');">
+<div class="container-contact3">
+    <div class="wrap-contact3">
+        <form (ngSubmit)="storeInquiry()" class="contact3-form validate-form">
+            <span class="contact3-form-title">
+                Inquiry
+            </span>
+
+
+
+            <div class="wrap-input3 validate-input" data-validate="Name is required">
+                <input class="input3" type="text" name="name" placeholder="First Name" required [(ngModel)]="inquiry.firstName">
+                <span class="focus-input3"></span>
+            </div>
+
+            <div class="wrap-input3 validate-input" data-validate="Name is required">
+                <input class="input3" type="text" name="name" placeholder="Last Name" required [(ngModel)]="inquiry.lastName">
+                <span class="focus-input3"></span>
+            </div>
+
+            <div class="wrap-input3 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                <input class="input3" type="text" name="email" placeholder="Your Email" required [(ngModel)]="inquiry.email">
+                <span class="focus-input3"></span>
+            </div>
+
+
+            <div class="wrap-input3 validate-input" data-validate = "Message is required">
+                <textarea class="input3" name="message" placeholder="Your Message" required [(ngModel)]="inquiry.message"></textarea>
+                <span class="focus-input3"></span>
+            </div>
+
+
+            <div class="container-contact3-form-btn">
+                <button class="contact3-form-btn" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Gallery -->
+
+<div id="pics" class="col-md-6">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <a href="{{studioefficiency.picture1}}"><img src="{{studioefficiency.picture1}}.jpg" class="img-responsive"></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <a href="{{studioefficiency.picture2}}"><img src="{{studioefficiency.picture2}}.jpg" class="img-responsive"></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <a href="{{studioefficiency.picture3}}"><img src="{{studioefficiency.picture3}}.jpg" class="img-responsive"></a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+        <a href="{{studioefficiency.picture4}}"><img src="{{studioefficiency.picture4}}.jpg" class="img-responsive"></a>
+    </div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture5}}"><img src="{{studioefficiency.picture5}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture6}}"><img src="{{studioefficiency.picture6}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture7}}"><img src="{{studioefficiency.picture7}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture8}}"><img src="{{studioefficiency.picture8}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture9}}"><img src="{{studioefficiency.picture9}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture10}}"><img src="{{studioefficiency.picture10}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture11}}"><img src="{{studioefficiency.picture11}}.jpg" class="img-responsive"></a>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+    <a href="{{studioefficiency.picture12}}"><img src="{{studioefficiency.picture12}}.jpg" class="img-responsive"></a>
+</div>
+
+    
+    
+
+</div>
+</div>
+</div>
+
+
+<div class="description">
+<h2>{{studioefficiency.propertyTitle}}</h2>
+
+        <h3>{{studioefficiency.propertyAddress}}</h3>
+
+        <h3><strong>{{studioefficiency.propertyType}}</strong></h3>
+
+        <li>{{studioefficiency.description1}}</li>
+
+        <li>{{studioefficiency.description2}}</li>
+                
+        <li>{{studioefficiency.description3}}</li> 
+                
+        <li>{{studioefficiency.description4}}</li> 
+                
+        <li>{{studioefficiency.description5}}</li> 
+                
+        <li>{{studioefficiency.description6}}</li> 
+                
+        <li>{{studioefficiency.description7}}</li> 
+    </div>
+
+    <div class="bottom">
+
+    </div>
+
+
+<!-- Gallery -->
+
+
+    
+
+
+
+
+
+
