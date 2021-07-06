@@ -4,7 +4,6 @@ import { Observable } from 'rxjs';
 import { Studioefficiency } from './studioefficiency'
 import { Home } from './home';
 import { Apartment } from './apartment';
-import { ImageModel } from './imagemodel';
 import { Inquiry } from './inquiry';
 
 
