@@ -18,7 +18,7 @@ home = new Home();
   submitProperty(){
     this.data.addHome(this.home).subscribe(
       response => {
-        this.router.navigate([`homepage`])
+        this.router.navigate([`homes`])
       }
     )
   }

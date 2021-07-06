@@ -19,7 +19,7 @@ constructor(private data: ManagementService, private router:Router, private auth
 submitProperty(){
   this.data.addApartment(this.apartment).subscribe(
     response => {
-      this.router.navigate([`homepage`])
+      this.router.navigate([`apartments`])
     }
   )
 }

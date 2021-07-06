@@ -18,7 +18,7 @@ studioefficiency = new Studioefficiency
   submitProperty(){
     this.data.addStudioEfficiency(this.studioefficiency).subscribe(
       response => {
-        this.router.navigate([`homepage`])
+        this.router.navigate([`studioefficiency`])
       }
     )
   }
