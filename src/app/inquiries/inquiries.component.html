@@ -1,0 +1,18 @@
+<table class="table table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">Last</th>
+        <th scope="col">First</th>
+        <th scope="col">Email</th>
+        <th scope="col">Message</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let inquiry of inquiries">
+        <th scope="row">{{inquiry.lastName}}</th>
+        <td>{{inquiry.firstName}}</td>
+        <td>{{inquiry.email}}</td>
+        <td>{{inquiry.message}}</td>
+      </tr>
+    </tbody>
+  </table>

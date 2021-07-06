@@ -13,6 +13,7 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
 import { HomeapplicationComponent } from './homeapplication/homeapplication.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { HomesComponent } from './homes/homes.component';
+import { InquiriesComponent } from './inquiries/inquiries.component';
 import { RentalapplicationComponent } from './rentalapplication/rentalapplication.component';
 import { StudioefficiencyComponent } from './studioefficiency/studioefficency.component';
 import { StudioefficiencyapplicationComponent } from './studioefficiencyapplication/studioefficiencyapplication.component';
@@ -35,7 +36,8 @@ const routes: Routes = [
   {path: 'fileupload', component: FileuploadComponent },
   {path: 'studioefficiencyapplication/:id', component: StudioefficiencyapplicationComponent},
   {path: 'apartmentapplication/:id', component: ApartmentapplicationComponent},
-  {path: 'homeapplication/:id', component: HomeapplicationComponent}
+  {path: 'homeapplication/:id', component: HomeapplicationComponent},
+  {path: 'inquiries', component: InquiriesComponent}
 
   
 ];
