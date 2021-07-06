@@ -35,6 +35,7 @@ import { FileuploadComponent } from './fileupload/fileupload.component';
 import { StudioefficiencyapplicationComponent } from './studioefficiencyapplication/studioefficiencyapplication.component';
 import { ApartmentapplicationComponent } from './apartmentapplication/apartmentapplication.component';
 import { HomeapplicationComponent } from './homeapplication/homeapplication.component';
+import { InquiriesComponent } from './inquiries/inquiries.component';
 
 
 
@@ -59,6 +60,7 @@ import { HomeapplicationComponent } from './homeapplication/homeapplication.comp
     StudioefficiencyapplicationComponent,
     ApartmentapplicationComponent,
     HomeapplicationComponent,
+    InquiriesComponent,
   ],
   imports: [
     BrowserModule,
